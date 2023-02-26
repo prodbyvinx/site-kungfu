@@ -1,0 +1,76 @@
+/* Importação de Fontes */
+@font-face {
+    font-family: 'floane';
+    src: url(fonts/Floane-Regular.otf);
+}
+
+@font-face {
+    font-family: 'ostrich';
+    src: url(fonts/OstrichSans-Heavy.otf);
+}
+
+@font-face {
+    font-family: 'aqua';
+    src: url(fonts/Meridies\ Antiqua.otf);
+}
+
+@font-face {
+    font-family: 'sunflower';
+    src: url(fonts/MADE\ Sunflower\ PERSONAL\ USE.otf);
+}
+
+/* Estilização do corpo */
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #2e2e2e;
+    color: whitesmoke;
+    font-family: 'floane';
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #181818;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #5f1010;
+  }
+
+.canal {
+    color: rgb(226, 42, 42);
+}
+
+.conteudohome{
+    text-align: center;
+    font-size: 20px;
+}
+
+.link-canal {
+    margin: 30px;
+}
+
+.footer {
+    margin: 0;
+    display: block;
+    text-align: center;
+    background-color: #181818;
+    height: 110px;
+    font-size: 18px;
+    padding-top: 1px;
+}
