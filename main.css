@@ -9,56 +9,116 @@
     src: url(fonts/OstrichSans-Heavy.otf);
 }
 
+@font-face {
+    font-family: 'aqua';
+    src: url(fonts/Meridies\ Antiqua.otf);
+}
+
+@font-face {
+    font-family: 'sunflower';
+    src: url(fonts/MADE\ Sunflower\ PERSONAL\ USE.otf);
+}
+
 /* Estilização do corpo */
 body {
     padding: 0;
-    background-color: #e2d37d;
+    background-color: #1b1b1b;
     overflow: hidden;
 }
 
 /* Academia Tan-Lan Amparo */
 .title {
-    text-align: start;
-    font-family: 'ostrich';
-    font-size: 4rem;
-    margin-top: 20px;
-    margin-left: 200px;
-    color: rgb(119, 28, 28);
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
-    width: 550px;
+    text-align: center;
+    font-family: 'sunflower';
+    font-size: 50px;
+    font-weight: 100;
+    color: #ececec;
+    position: relative;
     margin: 0;
 }
 
 p {
     display: flex;
     font-family: 'floane';
-    font-size: 20px;
+    font-size: 22px;
     text-align: center;
     width: 500px;
     justify-content: center;
     position: relative;
-    left: 800px;
+    left: 700px;
+    top: 12px;
+    color: #dddbdb;
 }
 
-.dragon {
-    width: 900px;
-    height: 550px;
-    mix-blend-mode: multiply;
+.templo {
+    width: 600px;
+    height: 510px;
     position: relative;
-    bottom: 430px;
+    bottom: 435px;
+    left: 60px;
+    border-radius: 2.3rem;
+    box-shadow: 0px 0px 17.5px 2.5px rgb(163, 163, 163); 
 }
 
+/* Estilização do botão */
 .button {
-    width: 300px;
-    height: 60px;
+    width: 340px;
+    height: 70px;
     border: none;
-    background-color: rgb(119, 28, 28);
-    border-radius: 20px;
+    background-color: #990b0b;
+    border-radius: 20rem;
     font-family: 'floane';
-    font-size: 18px;
+    font-size: 21px;
     cursor: pointer;
     color: whitesmoke;
     position: relative;
-    bottom: 500px;
+    left: 160px;
+    bottom: 478px;
+    text-transform: uppercase;
+    overflow: hidden;
+    font-weight: 600;
+}
+
+.button {
+    transition: all 0.5s;   
+}
+
+.button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: all 0.3s;
+    border-radius: 20rem;
+}
+
+.button:hover::before {
+    opacity: 0;
+    transform: scale(0.5 ,0.5);
+    border-radius: 20rem;
+}
+
+.button::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.3s;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    transform: scale(1.2,1.2);
+    border-radius: 20rem;
+}
+
+.button:hover::after {
+    opacity: 1;
+    transform: scale(1,1);
+    border-radius: 20rem;
 }
