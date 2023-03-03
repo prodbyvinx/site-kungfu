@@ -29,6 +29,30 @@ body {
     position: relative;
 }
 
+.logo {
+    border-radius: 50%;
+}
+
+.nomeAcademia {
+    position: absolute;
+    margin-top: 25px;
+    margin-left: 100px;
+    width: auto;
+    font-size: 20px;
+}
+
+.home {
+    border-radius: 50%;
+    padding: 30px;
+    left: 20px;
+    top: 7px;
+    position: absolute;
+    background-image: url(img/logo.png);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -57,72 +81,14 @@ ul {
     margin: 0;
   }
 
-.right {
+  .right {
     display: flex;
     justify-content: flex-end;
 }
 
-.canal {
-    color: rgb(226, 42, 42);
-}
 
-.conteudohome{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    font-size: 20px;
-    width: 500px;
-    position: absolute;
-    left: 100px;
-    top: 160px;
-    font-size: 16pt;
-}
 
-.logo {
-    border-radius: 50%;
-}
 
-.home {
-    border-radius: 50%;
-    padding: 30px;
-    left: 20px;
-    top: 7px;
-    position: absolute;
-    background-image: url(img/logo.png);
-    background-size: cover;
-    background-position: center;
-    cursor: pointer;
-}
-
-.nomeAcademia {
-    position: absolute;
-    margin-top: 25px;
-    margin-left: 100px;
-    width: auto;
-    font-size: 20px;
-}
-
-.video-right {
-    position: relative;
-    left: 650px;
-    margin: 30px;
-    top: 25px;
-}
-
-.tituloinfo-left {
-    background-color: #cc3f3f54;
-    height: 40px;
-    width: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    border-radius: 1rem;
-    margin: 0;
-    margin-top: 25px;
-}
 
 .footer {
     display: block;
